@@ -247,7 +247,7 @@ nav ul{
 }
 nav li{
 	display: inline;
-	padding: 2%;
+	padding: 1%;
 }
 nav a{
 	display: inline-block;
@@ -267,22 +267,19 @@ a:active{
 	background-color:#ed7213;
 }
 /*-------------------------------------------- Sports ---------------------------------------------*/
-.content{
-	margin: .1em auto;
-	text-align: center;
-}
-
 .container{
 	display: flex;
+	flex-flow: row wrap;
+	gap: 40px 35px;
+	justify-content: center;
 	background: bisque;
-	margin: 0 auto;
-	padding:0 90px;
+	margin: 5px auto;
+	padding:30px 90px;
 	width: 99%;
-	height: 100%;
+	height: auto;
 }
 .sports{
 	border-radius: 15px;
-	margin: 5px auto;
 	width:200px;
 	height: 200px;
 
@@ -318,7 +315,7 @@ a:active{
 	text-shadow: 1px 1px 30px black;
 }
 .stats:hover{
-	transform: scale(1.1);
+	transform: scale(1.17);
 	transition: all 0.3s ease;text-align: center;
 }
 .passport{
@@ -338,7 +335,13 @@ a:active{
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 15px 40px;
-
+}
+.corruption{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/corruption.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 15px 40px;
 }
 
 .stats-heading{
@@ -421,3 +424,24 @@ footer a:hover{
 	background-color: floralwhite;
 }
 
+/*--------------------------------------- MENU BAR ------------------------------------------*/
+
+
+/*----------------------------------------- Divorce ------------------------------------------*/
+
+
+@media screen and (max-width: 990px) {
+	nav{
+		max-width: 20em;
+		height: 100%;
+		background-color: yellow;
+		position: absolute;
+		top:0;
+		left:0;
+	}
+  nav a {
+    float: none;
+    width: 100%;
+		font-size: 20px;
+	}
+}
